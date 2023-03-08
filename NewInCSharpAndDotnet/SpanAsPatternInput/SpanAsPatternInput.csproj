@@ -7,6 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <!--
+    CA1050 - Declare types in namespaces - not necessary with benchmarks.
+    CA1822 - suggested static not a good idea with benchmarks.
+    -->
+    <NoWarn>$(NoWarn);CA1050;CA1822</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
   </ItemGroup>
