@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{4A67
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolationNewline", "InterpolationNewline\InterpolationNewline.csproj", "{3BF446DA-25C5-4419-940F-CBBE461F663E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{512AEE9B-6650-4E55-9B6A-F725041A1528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanAsPatternInput", "SpanAsPatternInput\SpanAsPatternInput.csproj", "{FC72DE16-0773-468E-A8EC-E12C7B53103D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{3BF446DA-25C5-4419-940F-CBBE461F663E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BF446DA-25C5-4419-940F-CBBE461F663E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BF446DA-25C5-4419-940F-CBBE461F663E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC72DE16-0773-468E-A8EC-E12C7B53103D}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{FC72DE16-0773-468E-A8EC-E12C7B53103D}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{FC72DE16-0773-468E-A8EC-E12C7B53103D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC72DE16-0773-468E-A8EC-E12C7B53103D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3BF446DA-25C5-4419-940F-CBBE461F663E} = {4A67807A-B6AD-49CD-897C-44E7CBEFD4EA}
+		{FC72DE16-0773-468E-A8EC-E12C7B53103D} = {512AEE9B-6650-4E55-9B6A-F725041A1528}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B1DB851-7223-42EA-A470-5D7D28628515}
