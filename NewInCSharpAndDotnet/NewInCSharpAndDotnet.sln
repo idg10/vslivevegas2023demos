@@ -19,15 +19,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericMaths", "GenericMath
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intialization", "Intialization", "{7830D7F0-17A7-4542-948F-7F7779F0DE3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyAndRequired", "PocHierarchyAndRequired\PocHierarchyAndRequired.csproj", "{524724D4-36A7-4FEE-9115-18931D2D6CD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PocHierarchyAndRequired", "PocHierarchyAndRequired\PocHierarchyAndRequired.csproj", "{524724D4-36A7-4FEE-9115-18931D2D6CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyWithoutRequiredOrCtors", "PocHierarchyWithoutRequiredOrCtors\PocHierarchyWithoutRequiredOrCtors.csproj", "{A725CE9F-134F-4DB1-BD48-6139F76F051E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PocHierarchyWithoutRequiredOrCtors", "PocHierarchyWithoutRequiredOrCtors\PocHierarchyWithoutRequiredOrCtors.csproj", "{A725CE9F-134F-4DB1-BD48-6139F76F051E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyWithoutRequiredUsingCtors", "PocHierarchyWithoutRequiredUsingCtors\PocHierarchyWithoutRequiredUsingCtors.csproj", "{C872F822-78DD-402B-8463-F46100B842E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PocHierarchyWithoutRequiredUsingCtors", "PocHierarchyWithoutRequiredUsingCtors\PocHierarchyWithoutRequiredUsingCtors.csproj", "{C872F822-78DD-402B-8463-F46100B842E5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotnet7", "Dotnet7", "{413082FA-9DC4-4F8D-BA81-637508C9A2AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotnet8", "Dotnet8", "{413082FA-9DC4-4F8D-BA81-637508C9A2AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrozenCollections", "FrozenCollections\FrozenCollections.csproj", "{8DB758D4-4420-47C3-B22C-9B13217A3E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMathsAfter", "GenericMathsAfter\GenericMathsAfter.csproj", "{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{A725CE9F-134F-4DB1-BD48-6139F76F051E} = {7830D7F0-17A7-4542-948F-7F7779F0DE3A}
 		{C872F822-78DD-402B-8463-F46100B842E5} = {7830D7F0-17A7-4542-948F-7F7779F0DE3A}
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E} = {413082FA-9DC4-4F8D-BA81-637508C9A2AE}
+		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93} = {0C728A62-83D6-4349-8776-3E34730DC2D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B1DB851-7223-42EA-A470-5D7D28628515}

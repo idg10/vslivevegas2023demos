@@ -7,11 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <!--
-    We're in a 'before' state that would normally provoke an IDE0060 because we've not yet written the code that uses the 2nd argument.
-    -->
-    <NoWarn>$(NoWarn);IDE0060</NoWarn>
-  </PropertyGroup>
-
 </Project>
