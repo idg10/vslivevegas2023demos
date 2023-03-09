@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
 
-static T Average<T>(T one, T two)
+static T Average<T>(T a, T b)
 {
-    return one;
+    return a;
 }
 
 Console.WriteLine(Average(10, 20));
