@@ -5,17 +5,25 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{4A67807A-B6AD-49CD-897C-44E7CBEFD4EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolationNewline", "InterpolationNewline\InterpolationNewline.csproj", "{3BF446DA-25C5-4419-940F-CBBE461F663E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterpolationNewline", "InterpolationNewline\InterpolationNewline.csproj", "{3BF446DA-25C5-4419-940F-CBBE461F663E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{512AEE9B-6650-4E55-9B6A-F725041A1528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanAsPatternInput", "SpanAsPatternInput\SpanAsPatternInput.csproj", "{FC72DE16-0773-468E-A8EC-E12C7B53103D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanAsPatternInput", "SpanAsPatternInput\SpanAsPatternInput.csproj", "{FC72DE16-0773-468E-A8EC-E12C7B53103D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utf8StringLiterals", "Utf8StringLiterals\Utf8StringLiterals.csproj", "{2B382551-75A6-4F37-9EB4-569F772A0350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utf8StringLiterals", "Utf8StringLiterals\Utf8StringLiterals.csproj", "{2B382551-75A6-4F37-9EB4-569F772A0350}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceStaticVirtual", "InterfaceStaticVirtual", "{0C728A62-83D6-4349-8776-3E34730DC2D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMaths", "GenericMaths\GenericMaths.csproj", "{486FC113-66F9-4F63-8AD7-D05A490EF8C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericMaths", "GenericMaths\GenericMaths.csproj", "{486FC113-66F9-4F63-8AD7-D05A490EF8C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intialization", "Intialization", "{7830D7F0-17A7-4542-948F-7F7779F0DE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyAndRequired", "PocHierarchyAndRequired\PocHierarchyAndRequired.csproj", "{524724D4-36A7-4FEE-9115-18931D2D6CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyWithoutRequiredOrCtors", "PocHierarchyWithoutRequiredOrCtors\PocHierarchyWithoutRequiredOrCtors.csproj", "{A725CE9F-134F-4DB1-BD48-6139F76F051E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocHierarchyWithoutRequiredUsingCtors", "PocHierarchyWithoutRequiredUsingCtors\PocHierarchyWithoutRequiredUsingCtors.csproj", "{C872F822-78DD-402B-8463-F46100B842E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,18 @@ Global
 		{486FC113-66F9-4F63-8AD7-D05A490EF8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486FC113-66F9-4F63-8AD7-D05A490EF8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486FC113-66F9-4F63-8AD7-D05A490EF8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{524724D4-36A7-4FEE-9115-18931D2D6CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{524724D4-36A7-4FEE-9115-18931D2D6CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{524724D4-36A7-4FEE-9115-18931D2D6CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{524724D4-36A7-4FEE-9115-18931D2D6CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A725CE9F-134F-4DB1-BD48-6139F76F051E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A725CE9F-134F-4DB1-BD48-6139F76F051E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A725CE9F-134F-4DB1-BD48-6139F76F051E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A725CE9F-134F-4DB1-BD48-6139F76F051E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C872F822-78DD-402B-8463-F46100B842E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C872F822-78DD-402B-8463-F46100B842E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C872F822-78DD-402B-8463-F46100B842E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C872F822-78DD-402B-8463-F46100B842E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +68,9 @@ Global
 		{FC72DE16-0773-468E-A8EC-E12C7B53103D} = {512AEE9B-6650-4E55-9B6A-F725041A1528}
 		{2B382551-75A6-4F37-9EB4-569F772A0350} = {4A67807A-B6AD-49CD-897C-44E7CBEFD4EA}
 		{486FC113-66F9-4F63-8AD7-D05A490EF8C0} = {0C728A62-83D6-4349-8776-3E34730DC2D3}
+		{524724D4-36A7-4FEE-9115-18931D2D6CD0} = {7830D7F0-17A7-4542-948F-7F7779F0DE3A}
+		{A725CE9F-134F-4DB1-BD48-6139F76F051E} = {7830D7F0-17A7-4542-948F-7F7779F0DE3A}
+		{C872F822-78DD-402B-8463-F46100B842E5} = {7830D7F0-17A7-4542-948F-7F7779F0DE3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B1DB851-7223-42EA-A470-5D7D28628515}
