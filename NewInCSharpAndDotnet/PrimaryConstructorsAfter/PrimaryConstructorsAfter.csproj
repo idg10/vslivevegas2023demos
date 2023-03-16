@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <LangVersion>preview</LangVersion>
+
+    <!--
+    CA1050: declare types in namespaces - it's only a demo!
+    IDE0044: make field readonly - opens a can of worms I won't have time to discuss
+    -->
+    <NoWarn>$(NoWarn);CA1050;IDE0044</NoWarn>
+  </PropertyGroup>
+
+</Project>
