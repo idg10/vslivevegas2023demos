@@ -37,9 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RawStringLiteralsAfter", "R
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cs12", "Cs12", "{243F2FB4-FCA7-41AA-A16C-24AB98688089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimaryConstructors", "PrimaryConstructors\PrimaryConstructors.csproj", "{7B23F892-B35F-47C0-B93A-CBF8C03E90A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimaryConstructors", "PrimaryConstructors\PrimaryConstructors.csproj", "{7B23F892-B35F-47C0-B93A-CBF8C03E90A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimaryConstructorsAfter", "PrimaryConstructorsAfter\PrimaryConstructorsAfter.csproj", "{5C6D3BCF-F2C0-4E8E-BF5A-B49F14F69BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimaryConstructorsAfter", "PrimaryConstructorsAfter\PrimaryConstructorsAfter.csproj", "{5C6D3BCF-F2C0-4E8E-BF5A-B49F14F69BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,8 +75,8 @@ Global
 		{C872F822-78DD-402B-8463-F46100B842E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C872F822-78DD-402B-8463-F46100B842E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C872F822-78DD-402B-8463-F46100B842E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB758D4-4420-47C3-B22C-9B13217A3E2E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{13E2E1CA-CB8F-4544-BAA6-8B0BFD1A1D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
