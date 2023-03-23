@@ -1,0 +1,51 @@
+name: Deploy idgvsvd2web Azure infrastructure
+
+# Manually-triggered deployment only.
+on:
+  workflow_dispatch:
+
+# Enables us to use this repo's service identity in Azure.
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  LOCATION: Central US
+  RESOURCE_GROUP_NAME: "Idg.Vegas.WebAppDryRun"
+  WORKING_DIRECTORY: ./AzureAppsTheAwkwardBits
+  # Azure AD objectId of the service principle associated with the app we created
+  AZURE_SP_OID: ${{ secrets.AZURE_IDGVSVD2_SPOID }}
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    environment: production
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Obtain access token for Azure using the Service Principle associated
+      # with this GitHub repository.
+      - name: Azure Login using OIDC
+        uses: azure/login@v1
+        with:
+          enable-AzPSSession: true 
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          client-id: ${{ secrets.AZURE_IDGVSVD2_CLIENT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Ensure Resource Group Exists
+        run: |
+          Get-AzResourceGroup -Name ${{ env.RESOURCE_GROUP_NAME }} -ErrorVariable notPresent -ErrorAction silentlyContinue
+          if ($notPresent)
+          {
+            New-AzResourceGroup -Name ${{ env.RESOURCE_GROUP_NAME }} -Location "${{ env.LOCATION }}"
+          }
+
+      - name: Deploy Azure Infrastructure
+        uses: azure/arm-deploy@v1
+        with:
+          resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
+          template: '${{ env.WORKING_DIRECTORY }}/WebApp.bicep'
+          parameters: '${{ env.WORKING_DIRECTORY }}/WebApp.vsvd2.parameters.json'

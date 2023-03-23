@@ -55,7 +55,7 @@ resource webApp 'Microsoft.Web/sites@2022-03-01' = {
       appSettings: [
         {
           name: 'Storage:ConnectionString'
-          value: 'DefaultEndpointsProtocol=https;AccountName=idgvsvd1stg;AccountKey=${storageAccount.listKeys().keys[0].value};EndpointSuffix=core.windows.net'
+          value: 'DefaultEndpointsProtocol=https;AccountName=${storageName};AccountKey=${storageAccount.listKeys().keys[0].value};EndpointSuffix=core.windows.net'
         }
         {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'

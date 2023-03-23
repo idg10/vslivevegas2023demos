@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Web App idgvsvd1web
+name: Build and deploy .NET application to Web App idgvsvd1web
 on:
   workflow_dispatch:
   push:
