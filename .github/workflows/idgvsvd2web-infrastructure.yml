@@ -36,10 +36,10 @@ jobs:
 
       - name: Ensure Resource Group Exists
         run: |
-          Get-AzResourceGroup -Name ${{ env.RESOURCE_GROUP_NAME }} -ErrorVariable notPresent -ErrorAction silentlyContinue
-          if ($notPresent)
+          $present = az group exists --resource-group ${{ env.RESOURCE_GROUP_NAME }}
+          if ($present -ne 'true')
           {
-            New-AzResourceGroup -Name ${{ env.RESOURCE_GROUP_NAME }} -Location "${{ env.LOCATION }}"
+            az group create --name ${{ env.RESOURCE_GROUP_NAME }} --location "${{ env.LOCATION }}"
           }
 
       - name: Deploy Azure Infrastructure
