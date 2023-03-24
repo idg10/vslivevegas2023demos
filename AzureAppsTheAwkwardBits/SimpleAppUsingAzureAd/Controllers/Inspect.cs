@@ -1,4 +1,6 @@
-﻿using Azure.Storage.Blobs;
+﻿using Azure.Core;
+using Azure.Identity;
+using Azure.Storage.Blobs;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +35,25 @@ namespace SimpleAppUsingAzureAd.Controllers
 
             StringBuilder result = new();
             await foreach(Azure.Storage.Blobs.Models.BlobContainerItem container in blobServiceClient.GetBlobContainersAsync())
+            {
+                result.AppendLine(container.Name);
+            }
+
+            return result.Length == 0 ? "No containers" : result.ToString();
+        }
+
+        [Route("showcontainersmanagedid")]
+        public async Task<string> ShowContainersManagedIdAsync([FromServices] IConfiguration config)
+        {
+            TokenCredential creds = new DefaultAzureCredential();
+            string url = config["Storage:AccountUrl"]!;
+
+            BlobServiceClient blobServiceClient = new(
+                new Uri(url),
+                creds);
+
+            StringBuilder result = new();
+            await foreach (Azure.Storage.Blobs.Models.BlobContainerItem container in blobServiceClient.GetBlobContainersAsync())
             {
                 result.AppendLine(container.Name);
             }
