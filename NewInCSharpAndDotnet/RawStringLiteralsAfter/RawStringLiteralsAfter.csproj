@@ -5,6 +5,12 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!--
+    CA1050: declare types in namespaces - it's only a demo!
+    IDE0059, CS0219: Unnecessary assignment of a value to gettingSillyNow - only a demo!
+    -->
+    <NoWarn>$(NoWarn);CA1050;IDE0059;CS0219</NoWarn>
   </PropertyGroup>
 
 </Project>
